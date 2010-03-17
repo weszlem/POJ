@@ -1,0 +1,20 @@
+public class KontoBankowe
+{
+    private Osoba wlasciciel;
+    private double stanKonta;
+    private double limitDebetu;
+
+    public KontoBankowe(Osoba wlasciciel)
+    {
+	this.wlasciciel = wlasciciel;
+    }
+
+    public void ustawDebet(double limitDebetu)
+    {
+	this.limitDebetu = limitDebetu;
+    }
+
+    public void wplata(double wplata)
+    {
+	this.stanKonta += wplata;
+    }

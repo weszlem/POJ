@@ -1,0 +1,11 @@
+public class Odcinek
+{
+    private int x1, x2, y1, y2;
+    private int id;
+    private static int iloscObiektow = 0;
+
+    public Odcinek()
+    {
+	iloscObiektow++;
+	id = iloscObiektow;
+    
