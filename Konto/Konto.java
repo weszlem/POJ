@@ -1,8 +1,8 @@
 public class Konto
 {
     private Osoba wlasciciel;
-    private int stanKonta;
-    private int limitDebetu;
+    private double stanKonta;
+    private double limitDebetu;
     
     private static int stopa = 0;
 
@@ -13,7 +13,7 @@ public class Konto
 	this.limitDebetu = 0;
     }
 
-    public void ustawDebet(int kwota)
+    public void ustawDebet(double kwota)
     {
 	if (kwota < 0)
 	    {
@@ -21,12 +21,12 @@ public class Konto
 	    }
     }
 
-    public void wplata(int kwota)
+    public void wplata(double kwota)
     {
 	this.stanKonta += kwota;
     }
 
-    public boolean wyplata(int kwota)
+    public boolean wyplata(double kwota)
     {
 	if ((this.stanKonta - this.limitDebetu - kwota) > 0)
 	    {
@@ -39,7 +39,7 @@ public class Konto
 	    }
     }
 
-    public boolean przelew(Konto k, int kwota)
+    public boolean przelew(Konto k, double kwota)
     {
 	if (this.wyplata(kwota))
 	    {
@@ -60,7 +60,7 @@ public class Konto
 
     public void dodajOdset()
     {
-	this.stanKonta += (this.stanKonta * Konto.stopa);
+	this.stanKonta += (this.stanKonta * Konto.stopa / 100);
     }
     
     public String toString()
