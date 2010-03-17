@@ -3,7 +3,7 @@ public class Konto
     private Osoba wlasciciel;
     private int stanKonta;
     private int limitDebetu;
-
+    
     private static int stopa = 0;
 
     public Konto(Osoba wlasciciel)
@@ -58,6 +58,11 @@ public class Konto
 	Konto.stopa = stopa;
     }
 
+    public void dodajOdset()
+    {
+	this.stanKonta += (this.stanKonta * Konto.stopa);
+    }
+    
     public String toString()
     {
 	return this.wlasciciel + ", stan konta: " + this.stanKonta;
