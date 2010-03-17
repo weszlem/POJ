@@ -40,8 +40,7 @@ public class Wektor3W extends Wektor2W
 
     public Wektor3W dodac(Wektor3W w)
     {
-	if (w instanceof Wektor2W) return new Wektor3W((this.x + w.x), (this.y + w.y), this.z);
-	else return new Wektor3W((this.x + w.x), (this.y + w.y), (this.z + w.z));
+	return new Wektor3W(this.x + w.x, this.y + w.y, this.z + w.z);
     }
 
     /*    public Wektor3W odjac(Wektor2W w)
