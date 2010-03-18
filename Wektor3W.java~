@@ -1,3 +1,0 @@
-public class Wektor3W extends Wektor2W
-{
-    private double z;
