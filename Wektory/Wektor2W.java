@@ -35,13 +35,14 @@ public class Wektor2W
 		this.x = w.getX();
 		this.y = w.getY();
 	}
-
+	
+	// Gettery i settery
 	public double getX() { return this.x; }
 	public double getY() { return this.y; }
 	public void setX(double x) { this.x = x; }
 	public void setY(double y) { this.y = y; }
 	public int getId() { return this.id; }
-	public String toString() { return "X = " + this.x + " Y = " + this.y + "\nDlugosc wektora to: " + this.dlugosc() + "\nId wektora: " + this.id; }
+	public String toString() { return "\nX = " + this.x + " Y = " + this.y + "\nDlugosc wektora to: " + this.dlugosc() + "\nId wektora: " + this.id + "\n"; }
 
 	// dzialania na wektorach
 
