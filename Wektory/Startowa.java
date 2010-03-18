@@ -34,6 +34,23 @@ public class Startowa
 		System.out.println("w3w + w13w");
 		System.out.println(w3w.dodac(w13w));
 		
+		System.out.println("w3w - w13w");
+		System.out.println(w3w.odjac(w13w));
 		
+		System.out.println("w3w * w13w");
+		System.out.println(w3w.iloczynSkalarny(w13w));
+		
+		// W2 i W3
+		
+		System.out.println("w + w13w");
+		System.out.println(w.dodac(w13w));
+		
+		System.out.println("w - w13w");
+		System.out.println(w.odjac(w13w));
+		
+		System.out.println("w * w13w");
+		System.out.println(w.iloczynSkalarny(w13w));
+		
+		// W3 i W2
 		}
 }

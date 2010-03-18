@@ -60,8 +60,18 @@ public class Wektor2W
 	{
 		return new Wektor2W((this.x - w.x), (this.y - w.y));
 	}
+	
+	public Wektor2W odjac(Wektor3W w)
+	{
+		return new Wektor3W((this.x - w.x), (this.y - w.y), -w.z);
+	}
 
 	public double iloczynSkalarny(Wektor2W w)
+	{
+		return (this.x * w.x) + (this.y * w.y);
+	}
+	
+	public double iloczynSkalarny(Wektor3W w)
 	{
 		return (this.x * w.x) + (this.y * w.y);
 	}

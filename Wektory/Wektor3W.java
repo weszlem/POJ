@@ -34,7 +34,7 @@ public class Wektor3W extends Wektor2W
 
 	public double getZ() { return this.z; }
 	public void setZ(double z) { this.z = z; }
-	public String toString() { return "X = " + this.x + " Y = " + this.y + " Z = " + this.z + "\nDlugosc wektora to: " + this.dlugosc() + "\nId: " + this.id; }
+	public String toString() { return "\nX = " + this.x + " Y = " + this.y + " Z = " + this.z + "\nDlugosc wektora to: " + this.dlugosc() + "\nId: " + this.id + "\n"; }
 
 	// dzialania na wektorach
 
