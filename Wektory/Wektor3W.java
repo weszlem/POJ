@@ -1,6 +1,6 @@
 public class Wektor3W extends Wektor2W
 {
-	private double z;
+	protected double z;
 
 	public Wektor3W()
 	{
@@ -43,18 +43,33 @@ public class Wektor3W extends Wektor2W
 		return new Wektor3W(this.x + w.x, this.y + w.y, this.z + w.z);
 	}
 
-	/*    public Wektor3W odjac(Wektor2W w)
+	public Wektor3W dodac(Wektor2W w)
 	{
-		return new Wektor3W((this.x - w.x), (this.y - w.y), (this.z - w.z));
-		}*/
+		return new Wektor3W(this.x + w.x, this.y + w.y, this.z);
+	}
 
-			/*    public double iloczynSkalarny(Wektor2W w)
-		{
-			return (this.x * w.x) + (this.y * w.y) + (this.z * w.z);
-			}*/
+	public Wektor3W odjac(Wektor3W w)
+	{
+		return new Wektor3W(this.x - w.x, this.y - w.y, this.z - w.z);
+	}
 
-				public double dlugosc()
-			{
-				return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2) + Math.pow(this.z, 2));
-			}
-		}
+	public Wektor3W odjac(Wektor2W w)
+	{
+		return new Wektor3W(this.x - w.x, this.y - w.y, this.z);
+	}
+
+	public double iloczynSkalarny(Wektor3W w)
+	{
+		return (this.x * w.x) + (this.y * w.y) + (this.z * w.z);
+	}
+
+	public double iloczynSkalarny(Wektor2W w)
+	{
+		return (this.x * w.x) + (this.y * w.y);
+	}
+
+	public double dlugosc()
+	{
+		return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2) + Math.pow(this.z, 2));
+	}
+}
