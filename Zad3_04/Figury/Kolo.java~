@@ -1,0 +1,9 @@
+public class Kolo
+{
+    private int promien;
+    
+    public Kolo(int x, int y, int r)
+    {
+	this.x = x;
+	this.y = y;
+	this.promien = r;

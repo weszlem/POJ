@@ -1,0 +1,10 @@
+public class Prostokat extends Figura
+{
+    private int szer, wys;
+
+    public Prostokat(int x, int y, int s, int w)
+    {
+	super(x, y);
+	this.szer = s;
+	this.wys = w;
+    }
