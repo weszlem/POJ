@@ -4,8 +4,7 @@ public class Osoba
 
     public Osoba()
     {
-	this.imie = "";
-	this.nazwisko = "";
+	this.imie = "", this.nazwisko = "";
     }
 
     public Osoba(String imie, String nazwisko)
@@ -18,6 +17,4 @@ public class Osoba
     public void setNazwisko(String nazwisko) { this.nazwisko = nazwisko; }
     public String getImie() { return this.imie; }
     public String getNazwisko() { return this.nazwisko; }
-
-    public String toString() { return "Osoba: " + this.imie + " " + this.nazwisko; }
-}
+    
