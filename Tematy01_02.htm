@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-2">
+  <meta name="Author" content="TLL">
+  <meta name="GENERATOR"
+ content="Mozilla/4.76 [en] (Win98; U) [Netscape]">
+  <title>POJ01_02</title>
+</head>
+<body>
+<b><font size="+1">Obiektowo¶æ Javy</font></b><br>
+&nbsp; <br>
+<br>
+<b><u>Zadanie 1</u></b><b> (3p)</b>
+<b><br>
+<br>
+Zaprojektowaæ i testowaæ klasê </b><i>Odcinek</i><b> (odcinki na
+p³aszczy¼nie) zawieraj±c± m. in. nastêpuj±ce metody:</b><br>
+<i><br>
+double dlugosc()</i><b>: oblicza d³ugo¶æ </b><i>naszego</i><b>
+odcinka,</b><br>
+<i>double odleglosc(int x, int y)</i><b>: oblicza odleg³o¶æ od
+¶rodka
+</b><i>naszego</i><b> odcinka do punktu </b><i>(x,y)</i><b>,</b><br>
+<i>boolean dluzszy(Odcinek od)</i><b>: sprawdza, czy </b><i>nasz</i><b>
+odcinek jest d³u¿szy ni¿ odcinek </b><i>od</i><b>,</b><i><br>
+Odcinek rzutX()</i><b>, </b><i>Odcinek rzutY()</i><b>:</b><i> </i><b>zwracaj±
+rzuty
+</b><i>naszego</i><b> odcinka na os. X, Y,<br>
+</b><span style="font-style: italic;">public String toString()</span><b>:
+</b><b>wyprowadza informacje o odcinku (</b><b>przedefiniowanie metody </b><span
+ style="font-style: italic;">toString()</span><b> z klasy </b><span
+ style="font-style: italic;">Object</span><b>).<br>
+<br>
+</b><b>Ka¿dy odcinek powinien mieæ swój unikalny
+numer</b> <b>(zaczynaj±c od 1), nadany automatycznie przy jego
+tworzeniu.</b><br>
+&nbsp;
+<p><b><u>Zadanie 2</u> (3p)</b>
+</p>
+<p><b>Zaprojektowaæ i testowaæ klasê </b><i>Wektor2W</i><b>
+reprezentuj±c±
+wektory dwuwymiarowe. </b><b>Ka¿dy wektor powinien mieæ swój unikalny
+numer</b> <b>(zaczynaj±c od 1), nadany automatycznie przy jego
+tworzeniu:<br>
+<br>
+</b><b>&nbsp;&nbsp;&nbsp;
+Pola:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; m. in. </b><i>double x, y</i><b> -
+wspó³rzêdne.</b>
+</p>
+<p><b>&nbsp;&nbsp;&nbsp; Konstruktory:&nbsp;&nbsp;&nbsp;&nbsp; </b><i>Wektor2W()</i><b>
+- konstruuje wektor </b><i>(0,0)</i><b>,</b>
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b><i>Wektor2W(double x, double y)</i><b> - konstruuje wektor </b><i>(x,y)</i><b>,</b>
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b><i>Wektor2W(double x)</i><b> - konstruuje wektor </b><i>(x,0)</i><b>,</b>
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b><i>Wektor2W(Wektor2W w)</i><b> - konstruuje kopiê istniej±cego
+wektora
+</b><i>w</i><b>.</b>
+</p>
+<p><b>&nbsp;&nbsp;&nbsp;
+Metody:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Metody pobieraj±ce i ustawiaj±ce warto¶ci pól</b><b>,</b>
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Metoda zwracaj±ca numer wektora,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Metody obliczaj±ce sumê, ró¿nicê, iloczyn skalarny wektorów i d³ugo¶æ
+wektora,</b>
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b><i>String toString( )</i><b> - wyprowadza informacje o wektorze.</b>&nbsp;</p>
+<p><b>Program nale¿y zaprojektowaæ tak, aby u³atwiæ ewentualne
+modyfikacje w przysz³o¶ci.</b><br>
+<b><u><br>
+</u></b></p>
+<p><b><u>Zadanie 3</u> (4p)<br>
+</b></p>
+<p><b>Napisaæ program symuluj±cy operacje na prostych kontach
+bankowych.<br>
+Ka¿de konto (obiekt klasy </b>Konto<b>) ma w³a¶ciciela (obiekt klasy </b>Osoba<b>),
+stan konta,
+limit debetu. Dostêpne s± cztery
+operacje na koncie: wp³ata, wyp³ata, przelew oraz obliczenie stanu
+konta po
+dodaniu odsetek, w skali rocznej. A</b><b>ktualna stopa procentowa -
+wspólna dla wszystkich kont jest ustalona statycznie w klasie </b>Konto<b>.
+</b><br>
+<span style="font-weight: bold;"><br>
+Stworzyæ w/w klasy w taki sposób, aby nastêpuj±cy program:</span><b><br>
+</b></p>
+<p>public class Test {</p>
+<p>&nbsp;&nbsp;&nbsp; public static void main(String[] args)<br>
+&nbsp;&nbsp; &nbsp;{<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Osoba klient1
+= new Osoba("ppj"), klient2 = new Osoba("poj");<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Konto konto1 =
+new Konto(klient1), konto2 = new Konto(klient2);<br>
+<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+konto1.ustawDebet(0); <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+konto2.ustawDebet(-100);<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+konto1.wplata(500);<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+konto2.wplata(900);<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+konto2.wyplata(300);<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+konto1.przelew(konto2, 200);<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+System.out.println(konto1);<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+System.out.println(konto2);<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+konto2.przelew(konto1, 950);<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+Konto.ustawStope(2);<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+konto1.dodajOdset();<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+konto2.dodajOdset();<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+System.out.println(konto1);<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+System.out.println(konto2);<br>
+&nbsp;&nbsp; &nbsp;}<br>
+}<br>
+</p>
+<p><span style="font-weight: bold;">wyprowadzi³ na konsolê poni¿sze
+wyniki:</span><br>
+</p>
+<p>ppj, stan konta: 300.0<br>
+poj, stan konta: 800.0<br>
+Operacja niedozwolona: przelew!<br>
+ppj, stan konta: 306.0<br>
+poj, stan konta: 816.0<br>
+</p>
+<b><u></u></b><b><br>
+</b><b><u>Zadanie 4</u> (4p)</b>
+<br>
+<br>
+<b>Zaprojektowaæ klasê </b><i>Wektor3W</i><b> (rozszerzaj±c± </b><i>Wektor2W<span
+ style="font-weight: bold;"> </span></i><span
+ style="font-weight: bold;">z zadania 2</span><b>)
+z dodatkowym atrybutem opisuj±cym wspó³rzêdn±: </b><i>double&nbsp; z</i><b>.
+Zdefiniowaæ odpowiednie konstruktory i metody korzystaj±c z
+konstruktorów
+i metod nadklas<span style="font-style: italic;">y </span></b><i>Wektor2W</i><b>.
+Jeden z konstruktorów
+powinien
+mieæ sygnaturê </b><i>Wektor3W(Wektor2W)</i><b>. Zapewniæ mo¿liwo¶æ
+dodawania,
+odejmowania i mno¿enia skalarnego dowolnych wektorów (zarówno typu </b><i>Wektor2W</i><b>&nbsp;
+jak i </b><i>Wektor3W</i><b>) ze sob±; w razie potrzeby wektor typu </b><i>Wektor2W</i><b>
+powinien byæ traktowany jak </b><i>Wektor3W</i><b> ze wspó³rzêdn±
+z-ow±
+równ± 0.</b> <br>
+<br>
+<br>
+<b><u>Zadanie 5</u> (4p)</b>
+<p><b>Zaprojektowaæ klasê </b><i>Osoba </i><b>z polami opisuj±cymi
+nazwisko i wiek. Klasa powinna byæ wyposa¿ona w konstruktory, metody
+ustalaj±ce/pobieraj±ce dane osoby oraz metodê </b><span
+ style="font-style: italic;">toString()</span><b> zwracaj±c± informacje
+o danej osobie. Nastêpnie, zdefiniowaæ klasê </b><span
+ style="font-style: italic;">Student</span><b> rozszerzaj±c± klasê </b><span
+ style="font-style: italic;">Osoba</span><b> z dodatkowym polem
+opisuj±cym numer grupy, do której nale¿y student oraz klasê </b><span
+ style="font-style: italic;">Wykladowca</span><b> </b><b>rozszerzaj±c±
+klasê </b><span style="font-style: italic;">Osoba</span><b> z
+dodatkowym polem
+opisuj±cym stanowisko</b><b> wyk³adowcy. Klasy </b><span
+ style="font-style: italic;">Student</span><span
+ style="font-weight: bold;">,</span><span style="font-style: italic;">
+Wykladowca <span style="font-weight: bold;"></span></span><b>wyposa¿yæ
+w potrzebne
+konstruktory i metody, które korzystaj±, tam gdzie jest to mo¿liwe, z
+konstruktorów oraz metod nadklasy.</b> <b>Ka¿dy student jak równie¿
+wyk³adowca powinien mieæ
+swój unikalny
+numer</b> <b>(zaczynaj±c od 1), nadany automatycznie przy tworzeniu.<br>
+</b></p>
+<b>W programie testuj±cym utworzyæ tablicê obiektów klasy </b><span
+ style="font-style: italic;">Osoba</span><b> zawieraj±c± kilku
+konkretnych studentów i wyk³adowców oraz przes³aæ j± do funkcji o
+nag³ówku<span style="font-style: italic;"> </span></b><span
+ style="font-style: italic;"><br>
+Osoba
+najmlodszy(Osoba[])</span><b> <br>
+zwracaj±cej osobê najm³odsz± z tablicy.
+Wypisaæ wszystkie informacjê o tej osobie.</b><br>
+<p></p>
+</body>
+</html>
